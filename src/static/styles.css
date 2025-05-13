@@ -75,15 +75,29 @@ section h3 {
 }
 
 .activity-card ul {
-  margin-top: 10px;
-  padding-left: 20px;
-  list-style-type: disc;
-  color: #556;
+  margin-top: 15px;
+  padding-left: 25px;
+  list-style-type: circle;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 .activity-card ul li {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   font-size: 14px;
+  color: #333;
+  position: relative;
+  padding-left: 20px;
+}
+
+.activity-card ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #1a237e;
+  font-size: 18px;
+  line-height: 1;
 }
 
 .form-group {
